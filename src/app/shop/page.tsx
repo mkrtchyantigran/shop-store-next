@@ -1,6 +1,7 @@
 import ShopCategoriesBar from "./_components/ShopCategoriesBar/ShopCategoriesBar";
 import FiltersSidebar from "./_components/FiltersSidebar/FiltersSidebar";
 import Products from "./_components/Products/Products";
+import FeaturedProducts from "./_components/FeaturedProducts/FeaturedProducts";
 import "./shop.scss";
 
 const benefits = [
@@ -42,6 +43,7 @@ export default function Shop() {
                     ))}
                 </div>
             </section>
+            <FeaturedProducts />
         </>
     );
 }
