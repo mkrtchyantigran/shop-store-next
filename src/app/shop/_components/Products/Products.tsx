@@ -5,7 +5,7 @@ import ProductCard from "@/components/ProductCard/ProductCard";
 import { products } from "@/data/products";
 import "./products.scss";
 
-const PAGE_SIZE = 6;
+const PAGE_SIZE = 18;
 
 function Products() {
     const [currentPage, setCurrentPage] = useState(1);
