@@ -13,3 +13,48 @@
         min-width: 0;
     }
 }
+
+.shop-benefits {
+    background-color: $gray_50;
+    padding: 40px 20px;
+}
+
+.shop-benefits-inner {
+    max-width: 1296px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.shop-benefit {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    img {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+}
+
+.shop-benefit-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $black;
+        margin: 0;
+    }
+
+    p {
+        font-size: 14px;
+        color: $black_60;
+        margin: 0;
+    }
+}
