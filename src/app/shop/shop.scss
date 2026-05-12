@@ -1,0 +1,15 @@
+@use '../../styles/variables' as *;
+
+.shop-layout {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+
+    .products_shop {
+        flex: 1;
+        min-width: 0;
+    }
+}

@@ -1,0 +1,53 @@
+﻿@use '../../../../styles/variables.scss' as *;
+
+
+.shop-categories-bar {
+    background-color: $gray_50;
+
+    .container {
+        max-width: 1296px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .categories-list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            list-style: none;
+            padding: 60px 0;
+
+
+            .category-item {
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    text-decoration: none;
+                    color: inherit;
+                    justify-content: center;
+                }
+
+                img {
+                    width: 64px;
+                    height: 64px;
+                    background: $white;
+                    padding: 12px;
+                }
+
+                .category-info {
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 8px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        color: $black_60;
+                    }
+                }
+            }
+        }
+    }
+}

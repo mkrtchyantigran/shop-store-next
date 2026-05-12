@@ -1,0 +1,172 @@
+@use '../../styles/variables' as *;
+
+footer {
+    background-color: $beige;
+    padding: 60px 0px;
+
+    .container {
+        max-width: 1296px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .newsletter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 80px;
+
+            .newsletter-text {
+
+                h3 {
+                    font-size: 28px;
+                    font-weight: 700;
+                    color: $black;
+                    margin-bottom: 4px;
+                }
+
+                p {
+                    font-size: 28px;
+                    font-weight: 700;
+                    color: $black;
+                }
+            }
+
+            .newsletter-form {
+                display: flex;
+
+                input {
+                    width: 300px;
+                    padding: 16px 20px;
+                    border: 1px solid $light_gray;
+                    background-color: $white;
+                    font-size: 20px;
+                    color: $black;
+                    outline: none;
+
+                    &::placeholder {
+                        color: $black_60;
+                    }
+                }
+
+                button {
+                    padding: 20px 55px;
+                    background-color: $brown;
+                    color: $white;
+                    font-size: 20px;
+                    font-weight: 500;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: $dark_brown;
+                    }
+                }
+            }
+        }
+
+        .footer-columns {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 80px;
+
+
+
+            .store-info {
+
+                .logo {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-bottom: 20px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    h4 {
+                        font-size: 20px;
+                        color: $black;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    color: $black_60;
+                    margin-bottom: 20px;
+                }
+
+                .socials {
+                    display: flex;
+                    gap: 12px;
+                    list-style: none;
+                    padding: 0;
+                    margin-top: 20px;
+
+                    li {
+                        a {
+                            display: block;
+
+                            img {
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-column {
+                h4 {
+                    font-size: 20px;
+                    color: $black;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        margin-bottom: 12px;
+
+                        a {
+                            font-size: 16px;
+                            color: $black_60;
+                            text-decoration: none;
+                            transition: color 0.3s ease;
+
+                            &:hover {
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .copyright-and-payments {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+
+            p {
+                font-size: 14px;
+                color: $black_60;
+            }
+
+            .payments {
+                img {
+                    width: 263px;
+                    height: 25px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

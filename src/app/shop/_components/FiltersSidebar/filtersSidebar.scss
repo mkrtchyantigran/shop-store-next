@@ -1,0 +1,55 @@
+@use '../../../../styles/variables' as *;
+
+.filters-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+
+    .filter-by-price {
+        margin-bottom: 32px;
+
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+            color: $black;
+            margin-bottom: 20px;
+        }
+
+        .price-display {
+            font-size: 20px;
+            color: $black_80;
+            margin-top: 16px;
+        }
+
+        .rc-slider {
+            padding: 8px 0;
+        }
+
+        .rc-slider-rail {
+            background-color: $light_gray;
+            height: 3px;
+        }
+
+        .rc-slider-track {
+            background-color: $brown;
+            height: 3px;
+        }
+
+        .rc-slider-handle {
+            width: 16px;
+            height: 16px;
+            margin-top: -7px;
+            background-color: $white;
+            border: 2px solid $brown;
+            opacity: 1;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.rc-slider-handle-dragging {
+                border-color: $brown;
+                box-shadow: 0 0 0 4px rgba(148, 116, 88, 0.2);
+            }
+        }
+    }
+}

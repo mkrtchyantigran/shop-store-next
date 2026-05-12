@@ -1,0 +1,90 @@
+@use '../../styles/variables' as *;
+
+.product-card-with-like {
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #F8F8F8;
+            aspect-ratio: 416 / 480;
+            position: relative;
+
+            img {
+                max-width: 80%;
+                max-height: 80%;
+                object-fit: contain;
+            }
+
+            .like-btn {
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                background: transparent;
+                border: none;
+                font-size: 22px;
+                color: #b0b0b0;
+                cursor: pointer;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #ad9696;
+                }
+            }
+        }
+
+        .product-info {
+            .info-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
+
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $black;
+                }
+
+                .color-swatches {
+                    display: flex;
+                    gap: 6px;
+
+                    .dot {
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: #ccc;
+
+                        &:nth-child(1) {
+                            background-color: #BDBDBD;
+                        }
+                        &:nth-child(2) {
+                            background-color: #A89891;
+                        }
+                        &:nth-child(3) {
+                            background-color: #8F909B;
+                        }
+                    }
+                }
+            }
+
+            .price {
+                font-size: 16px;
+                font-weight: 500;
+                color: #888888;
+            }
+        }
+    }
+}

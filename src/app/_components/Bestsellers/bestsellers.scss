@@ -1,0 +1,51 @@
+﻿@use '../../../styles/variables' as *;
+
+.bestsellers {
+    padding: 80px;
+
+    .container {
+        max-width: 1296px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .title-and-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 50px;
+                font-weight: 700;
+                color: $black;
+            }
+
+            a {
+                display: inline-block;
+                padding: 12px 28px;
+                border: 1px solid $black_60;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 500;
+                color: $black;
+                background-color: $white;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: $light_gray;
+                }
+            }
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            list-style:none;
+            padding: 0;
+            margin: 0;
+
+            
+        }
+    }
+}
