@@ -1,0 +1,59 @@
+@use '../../styles/variables' as *;
+@use '../../styles/fonts' as *;
+
+.about-hero {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1920 / 720;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.about-description {
+    padding: 80px 0;
+
+    .container {
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-family: $DM_Sans;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        color: $black;
+        max-width: 1037px;
+        margin: 0 auto 40px;
+    }
+}
+
+.about-description-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1037px;
+    margin: 0 auto;
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        color: $black;
+        margin: 0;
+    }
+}
+
+.about-description-read-more {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $black;
+    text-decoration: underline;
+}
