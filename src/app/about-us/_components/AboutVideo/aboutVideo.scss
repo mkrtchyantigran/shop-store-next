@@ -1,0 +1,57 @@
+@use '../../../../styles/variables' as *;
+
+.about-video {
+    padding: 0 0 80px;
+
+    .container {
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+.about-video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+
+    iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.about-video-poster {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.about-video-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}

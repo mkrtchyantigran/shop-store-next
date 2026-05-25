@@ -57,3 +57,307 @@
     color: $black;
     text-decoration: underline;
 }
+
+.about-promo-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1920 / 600;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.about-promo-bar {
+    background-color: $beige;
+    padding: 40px 0;
+
+    .container {
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+.about-promo-text {
+    h2 {
+        font-size: 50px;
+        font-weight: 700;
+        color: $black;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 16px;
+        color: $black_60;
+    }
+}
+
+.about-promo-button {
+    flex-shrink: 0;
+    padding: 16px 40px;
+    background-color: $brown;
+    color: $white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.about-stats {
+    padding: 80px 0;
+
+    .container {
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+.about-stats-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        margin-bottom: 16px;
+    }
+}
+
+.about-stats-value {
+    font-size: 50px;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 4px;
+}
+
+.about-stats-label {
+    font-size: 16px;
+    color: $black_60;
+}
+
+
+.about-cards {
+    padding: 0 0 80px;
+
+    .container {
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+.about-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.about-cards-photo {
+    position: relative;
+    aspect-ratio: 1 / 1;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.about-cards-text {
+    background-color: $beige;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+        font-size: 28px;
+        font-weight: 700;
+        color: $black;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 24px;
+        color: $black_60;
+        margin-bottom: 24px;
+    }
+}
+
+.about-cards-button {
+    align-self: flex-start;
+    padding: 12px 28px;
+    background-color: $brown;
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.about-team {
+    padding: 80px 0;
+
+    .container {
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 50px;
+        font-weight: 700;
+        color: $black;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+.about-team-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-team-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: $gray_50;
+    margin-bottom: 20px;
+}
+
+.about-team-member h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 4px;
+}
+
+.about-team-member span {
+    font-size: 14px;
+    color: $black_60;
+}
+
+/* ===== Collections ===== */
+
+.about-collections {
+    padding: 120px 0;
+    background-color: $beige;
+
+    .container {
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+.about-collections-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.about-collection {
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: $black;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        color: $black_60;
+        margin-bottom: 12px;
+    }
+}
+
+.about-collection-photo {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.about-collection-link {
+    font-size: 14px;
+    font-weight: 700;
+    color: $black;
+    text-decoration: underline;
+}
+
+/* ===== Instagram ===== */
+
+.about-instagram {
+    padding: 80px 0;
+
+    .container {
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 50px;
+        font-weight: 700;
+        color: $black;
+        margin-bottom: 40px;
+    }
+}
+
+.about-instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-instagram-item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+    }
+}
