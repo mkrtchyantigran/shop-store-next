@@ -1,10 +1,15 @@
-import ProductCardWithLike from "@/components/ProductCardWithLike/ProductCardWithLike";
-import { products } from "@/data/products";
-import "./newProducts.scss";
+"use client"
 
-const newProducts = products.slice(0, 3);
+import ProductCardWithLike from "@/components/ProductCardWithLike/ProductCardWithLike";
+import "./newProducts.scss";
+import { useAppSelector as useSelector} from "@/redux/hooks";
+import { selectProducts } from "@/redux/slices/productSlice";
 
 export default function NewProducts() {
+    
+    const products = useSelector(selectProducts);
+    const newProducts = products.slice(0, 3);
+
     return (
         <section className="new-products">
             <div className="container">

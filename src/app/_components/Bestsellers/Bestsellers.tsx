@@ -3,6 +3,8 @@ import ProductCard from "@/components/ProductCard/ProductCard";
 import { products } from "@/data/products";
 import "./bestsellers.scss";
 
+const PRODUCTS_SIZE = 8;
+
 export default function Bestsellers() {
     return (
         <section className="bestsellers">
@@ -12,7 +14,7 @@ export default function Bestsellers() {
                     <Link href="/">View all</Link>
                 </div>
                 <ul className="products-grid">
-                    {products.map((product) => (
+                    {products.slice(0, PRODUCTS_SIZE).map((product) => (
                         <ProductCard key={product.id} {...product} />
                     ))}
                 </ul>

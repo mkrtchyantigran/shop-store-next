@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import StoreProvider from "@/redux/StoreProvider";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -22,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={dmSans.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <StoreProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </StoreProvider>
       </body>
     </html>
   );
