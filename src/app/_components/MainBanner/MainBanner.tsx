@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import './mainBanner.scss';
 
 export default function MainBanner() {
@@ -20,8 +21,8 @@ export default function MainBanner() {
                         <div className="cards-wrapper">
                             <div className="cards-grid">
                                 <div className="card">
+                                    <Image src="/images/image_1.png" alt="Wooden frame armchair" fill sizes="(max-width: 768px) 45vw, 230px" />
                                     <span className="price">$199</span>
-                                    <img src="/images/chair.jpg" alt="High chair" />
                                 </div>
 
                                 <div className="card promo-card">
@@ -30,10 +31,12 @@ export default function MainBanner() {
                                 </div>
 
                                 <div className="card">
+                                    <Image src="/images/image_2.png" alt="Blue velvet armchair" fill sizes="(max-width: 768px) 45vw, 230px" />
                                     <span className="price">$99</span>
                                 </div>
 
                                 <div className="card">
+                                    <Image src="/images/image_1.png" alt="Wooden frame armchair" fill sizes="(max-width: 768px) 45vw, 230px" />
                                     <span className="price">$199</span>
                                 </div>
 

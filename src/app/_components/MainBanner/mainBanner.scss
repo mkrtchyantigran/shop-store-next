@@ -67,9 +67,10 @@
                     gap: 20px;
 
                     .card {
-                        background-color: $white;
+                        background-color: #FAF9F7;
                         aspect-ratio: 1 / 1;
                         position: relative;
+                        overflow: hidden;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -77,8 +78,9 @@
 
                         .price {
                             position: absolute;
-                            top: 20px;
-                            left: 20px;
+                            z-index: 1;
+                            top: 12px;
+                            left: 14px;
                             color: $brown;
                             font-weight: 600;
                             font-size: 16px;
@@ -86,9 +88,9 @@
                         }
 
                         img {
-                            width: 212px;
-                            height: 212px;
-                            object-fit: cover;
+                            object-fit: contain;
+                            padding: 10px;
+                            box-sizing: border-box;
                         }
 
                         &.promo-card {

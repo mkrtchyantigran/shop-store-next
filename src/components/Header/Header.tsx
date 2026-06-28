@@ -74,18 +74,21 @@ export default function Header() {
                     <div className="right_side">
                         <ul>
                             <li>
-                                <Link href="/login">
-                                    <img src="/icons/login-icon.svg" alt="login icon" />
+                                <Link href="/login" className="icon-link">
+                                    <img src="/icons/login-icon.svg" alt="Account" />
+                                    <span>Account</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/wishlist">
-                                    <img src="/icons/heart-icon.svg" alt="heart icon" />
+                                <Link href="/wishlist" className="icon-link">
+                                    <img src="/icons/heart-icon.svg" alt="Wishlist" />
+                                    <span>Wishlist</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/cart">
-                                    <img src="/icons/shop-icon.svg" alt="shop icon" />
+                                <Link href="/cart" className="icon-link">
+                                    <img src="/icons/shop-icon.svg" alt="Cart" />
+                                    <span>Cart</span>
                                 </Link>
                             </li>
                         </ul>
