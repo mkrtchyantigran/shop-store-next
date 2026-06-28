@@ -9,8 +9,6 @@ export const initialState: ProductItem[] = products.map((product) => ({
     ...product
 }));
 
-console.log(initialState);
-
 const ProductsSlice = createSlice({
     name: "products",
     initialState,
