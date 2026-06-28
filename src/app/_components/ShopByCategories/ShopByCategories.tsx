@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import './shopByCategories.scss';
 
 export default function ShopByCategories() {
@@ -15,7 +16,7 @@ export default function ShopByCategories() {
                         <li className="category-card">
                             <Link href="/">
                                 <div className='image-wrapper'>
-                                    <img src="/images/shop-categories-images/category-chair.jpg" alt="chair" />
+                                    <Image src="/images/shop-categories-images/category-chair.jpg" alt="chair" fill sizes="(max-width: 768px) 50vw, 25vw" />
                                 </div>
                                 <div className="category-info">
                                     <h3>Tables</h3>
@@ -26,7 +27,7 @@ export default function ShopByCategories() {
                          <li className="category-card">
                             <Link href="/">
                                 <div className='image-wrapper'>
-                                    <img src="/images/shop-categories-images/category-table.jpg" alt="table" />
+                                    <Image src="/images/shop-categories-images/category-table.jpg" alt="table" fill sizes="(max-width: 768px) 50vw, 25vw" />
                                 </div>
                                 <div className="category-info">
                                     <h3>Tables</h3>
@@ -37,7 +38,7 @@ export default function ShopByCategories() {
                          <li className="category-card">
                             <Link href="/">
                                 <div className='image-wrapper'>
-                                    <img src="/images/shop-categories-images/category-armchair.jpg" alt="armchair" />
+                                    <Image src="/images/shop-categories-images/category-armchair.jpg" alt="armchair" fill sizes="(max-width: 768px) 50vw, 25vw" />
                                 </div>
                                 <div className="category-info">
                                     <h3>Armchairs</h3>
@@ -48,7 +49,7 @@ export default function ShopByCategories() {
                         <li className="category-card">
                             <Link href="/">
                                 <div className='image-wrapper'>
-                                    <img src="/images/shop-categories-images/category-sofa.jpg" alt="sofa" />
+                                    <Image src="/images/shop-categories-images/category-sofa.jpg" alt="sofa" fill sizes="(max-width: 768px) 50vw, 25vw" />
                                 </div>
                                 <div className="category-info">
                                     <h3>Sofas</h3>
